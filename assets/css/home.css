@@ -1,0 +1,139 @@
+/* ============ CONFIGURAçãO HOME ============ */
+
+.container {
+  width: 100%;
+  max-width: 1536px;
+  height: 100%;
+  max-height: 755px;
+  align-items: center;
+}
+  
+#home {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  background: var(--bg-home) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  
+.home {
+  display: inline-block;
+  width: 100%;
+  max-width: 1525px;
+  height: 100%;
+  max-height: 750px;
+  color: white;
+}
+
+.home-aside {
+  left: 40%;
+  width: 100%;
+  top: 34.78%;
+  left: 30.45%;
+  max-width: 600px;
+  height: 50%;
+}
+  
+#redes-sociais {
+  text-align: center;
+}
+  
+#redes-sociais a {
+  display: inline-block;
+  height: 24px;
+  width: 49px;
+  margin-right: 20px;
+  transition: background 0.8s;
+}
+  
+#redes-sociais a:last-child {
+  margin-right: 0%;
+}
+  
+#redes-sociais a:hover {
+  background: var(--cor-menu-hover);    
+  border: 2px solid var(--cor-menu-hover);
+}
+
+#linkedIn,
+#facebook,
+#instagram,
+#github {
+  width: 25px;
+  height: 25px;
+  transition: background-image 1s;
+}
+  
+#linkedIn:hover,
+#facebook:hover,
+#instagram:hover,
+#github:hover  {
+  width: 25px;
+  height: 25px;
+}
+  
+#linkedIn {
+  background: var(--linkedin) no-repeat center;
+}
+  
+#linkedIn:hover {
+  background: var(--linkedin-hover) no-repeat center;
+}
+  
+#instagram {
+  background: var(--instagram) no-repeat center;
+}
+  
+#instagram:hover {
+  background: var(--instagram-hover) no-repeat center;
+}
+  
+#github {
+  background: var(--github) no-repeat center;
+}
+  
+#github:hover {
+  background: var(--github-hover) no-repeat center;
+}
+  
+#facebook {
+  background: var(--facebook) no-repeat center;
+}
+  
+#facebook:hover {
+  background: var(--facebook-hover) no-repeat center;
+}
+  
+#maquinaEs {
+  width: 580px;
+}
+  
+h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  margin-left: 5%;
+  white-space: nowrap;
+  animation: typing 3.5s steps(29), curPisc .6s 8;
+}
+
+p {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.emphasis {
+  font-weight: 900;
+  color: var(--color-font-link);
+}
+
+
+.downHome {
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+}
