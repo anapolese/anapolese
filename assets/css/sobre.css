@@ -4,15 +4,13 @@
 }
 
 .sobre-aside:first-child {
-   width: 100%;
+   width: 45%;
    background: #221542;
-   max-width: 650px;
 }
 
 .sobre-aside:nth-child(2) {
-   right: 14.93%;
-   width: 100%;
-   max-width: 624px;
+   right: 0;
+   width: 55%;
 }
 
 #textInfo {
