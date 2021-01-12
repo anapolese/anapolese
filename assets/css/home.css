@@ -1,0 +1,362 @@
+/**
+ * =================================================================== 
+ *  01. HOME
+ *  02. ABOUT
+ *  03. PROJECTS
+ *  04. CONTACT
+ * ===================================================================  */
+
+
+/**
+* ===================================================================
+*    01. HOME
+* =================================================================== */
+
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1536px;
+  height: 100%;
+  max-height: 765px;
+  align-items: center;
+}
+  
+#home {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  background: var(--bg-home) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  
+.home {
+  display: inline-block;
+  width: 100%;
+  max-width: 1525px;
+  height: 100%;
+  max-height: 750px;
+  color: white;
+}
+
+.home-aside {
+  width: 100%;
+  top: 34.78%;
+  left: 30.45%;
+  max-width: 600px;
+  height: 50%;
+}
+  
+#redes-sociais {
+  text-align: center;
+}
+  
+#redes-sociais a {
+  display: inline-block;
+  height: 24px;
+  width: 49px;
+  margin-right: 20px;
+  transition: background 0.8s;
+}
+  
+#redes-sociais a:last-child {
+  margin-right: 0%;
+}
+  
+#redes-sociais a:hover {
+  background: var(--cor-menu-hover);    
+  border: 2px solid var(--cor-menu-hover);
+}
+
+#linkedIn,
+#facebook,
+#instagram,
+#github {
+  width: 25px;
+  height: 25px;
+  transition: background-image 1s;
+}
+  
+#linkedIn:hover,
+#facebook:hover,
+#instagram:hover,
+#github:hover  {
+  width: 25px;
+  height: 25px;
+}
+  
+#linkedIn {
+  background: var(--linkedin) no-repeat center;
+}
+  
+#linkedIn:hover {
+  background: var(--linkedin-hover) no-repeat center;
+}
+  
+#instagram {
+  background: var(--instagram) no-repeat center;
+}
+  
+#instagram:hover {
+  background: var(--instagram-hover) no-repeat center;
+}
+  
+#github {
+  background: var(--github) no-repeat center;
+}
+  
+#github:hover {
+  background: var(--github-hover) no-repeat center;
+}
+  
+#facebook {
+  background: var(--facebook) no-repeat center;
+}
+  
+#facebook:hover {
+  background: var(--facebook-hover) no-repeat center;
+}
+  
+#maquinaEs {
+  width: 580px;
+}
+  
+h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  white-space: nowrap;
+  animation: typing 4s steps(40), curPisc .6s 8;
+}
+
+p {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.emphasis {
+  font-weight: 900;
+  color: var(--color-font-link);
+}
+
+
+.downHome,
+.downProjetos,
+.last {
+  position: absolute;
+  left: 48.5%;
+  bottom: 0;
+}
+
+/**
+* ===================================================================
+*    02. ABOUT
+* =================================================================== */
+
+.sobre-aside {
+  display: inline-block;
+  height: 100%;
+}
+
+.sobre-aside:first-child {
+  width: 45%;
+  background: #221542;
+}
+
+.sobre-aside:nth-child(2) {
+  right: 0;
+  width: 55%;
+}
+
+#textInfo {
+margin: 25% 17% 0 10%;
+
+}
+
+.intro {
+  width: 95%;
+  text-align: left;
+  font-size: 1em;
+  
+}
+
+#photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: 23%;
+  margin-top: 20%;
+}
+
+#photo-resize {
+  position: absolute;
+  width: 100%;
+}
+
+#photo-resize img {
+  border-radius: 50%;
+  width: 90%;
+  max-height: 100%;
+}
+
+.spcText {
+  display: none;
+}
+
+.downSobre {
+  position: absolute; 
+  left: 48%;
+  bottom: 0; 
+}
+
+/**
+* ===================================================================
+*    03. PROJECTS
+* =================================================================== */
+
+.projetos-aside {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+#projects-content {
+  overflow: hidden;
+  width: 100%;
+  height: 79%;
+  margin: auto;
+  padding: 0.76% 15.1% 0.76% 15.1%;
+  background: rgba(39, 24, 71);
+}
+
+
+.thumbnail {
+  width: 331px;
+  height: 201px;
+  margin: 1%;
+}
+
+.thumbnail a {
+  display: block;
+  width: 332px;
+  margin: 0.5%;
+  height: 201px;
+  border-radius: 2%;
+  transition: all 300ms ease-in-out;   
+}
+
+.thumbnail img {
+  align-self: center;
+  border-radius: 2%;
+  opacity: 1;
+  width: 331px;
+  height: 202px;
+}
+
+
+.thumbnail:hover {
+  border-radius: 2%;
+  box-shadow: 0 0 2px 1px rgba(129, 59, 72, 0.5);
+}
+
+.containere {
+  display: inline-block;
+  position: relative;
+  margin: 1%;
+  width: 100%;
+  height: 100%;
+  max-width: 331px;
+  max-height: 202px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.containere:hover .overlay {
+  opacity: 1;
+  background: rgba(14, 10, 36, 0.5);
+}
+
+.icon {
+  position: absolute;
+  padding: 18%;
+  top: 48%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.triangle-view::before {
+  content: url(../img/logs.png);
+  display: inline-block; 
+}
+
+/**
+* ===================================================================
+*    04. CONTACT
+* =================================================================== */
+
+#contato {
+  background: var(--background-blue);
+}
+
+.contato-aside{
+  width: 100%;
+  height: 100%;
+}
+
+.contato {
+  margin: 13% 30% 0 30%;
+}
+
+form {
+  max-width: 642px;
+}
+
+button[type=submit] {
+  width: auto;
+  float: right;
+}
+
+span.text {
+  font-size: 12px;
+  display: inline-block;
+  float: left;
+}
+
+.chevron-up {
+ display: inline-block;
+ vertical-align: top;
+ width: 48px;
+ height: 48px;
+ background-image: var(--chevron-up);
+ animation: fade 1.3s infinite;
+}
+

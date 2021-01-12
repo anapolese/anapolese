@@ -1,0 +1,407 @@
+@media only screen 
+and (min-width: 1000px) 
+and (max-width: 1100px) {
+    header {
+        width: 100% !important;
+    }
+
+    header div nav {
+        width: 100%;
+    }
+
+    .home-aside {
+        position: static;
+        width: 76% !important;
+        margin: 20% 22% !important;
+    }
+
+    #redes-sociais a {
+        width: 26px;
+        margin: 0% 0% 0% 5%;
+    }
+
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+        animation: none;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    section {
+        width: 100%;
+        padding: 14px;
+    }
+
+    aside {
+        width: 100% !important;
+        margin: 0% !important;
+        text-align: center;
+    }
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 100% !important;
+        width: 55% !important;
+        background: #221542;
+    }
+
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 45% !important;
+        font-size: 0.88em !important;
+        height: 100% !important;
+        margin: 12% 1% 1% 1% !important;
+    }
+
+    #textInfo {
+        margin: 2% 10% 0 9%;
+    }
+
+ 
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 50% !important;
+        margin: 30% 0% 0% 12%;
+    }
+
+    .projetos-aside {
+        margin-top: 6% !important;
+    }
+    .thumbnail {
+        width: 250px;
+        height: 190px;
+    }
+    
+    .thumbnail img {
+        width: 250px;
+        height: 190px;
+
+    }
+
+    .containere {
+        max-width: 300px !important;
+        overflow: hidden;
+    }
+
+    .icon {
+    top: 65%;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+  
+}
+    
+@media only screen 
+and (min-width: 900px) 
+and (max-width: 999px) {
+    header {
+        width: 100% !important;
+    }
+
+    header div nav {
+        width: 100%;
+    }
+
+    .home-aside {
+        position: static;
+        width: 76% !important;
+        margin: 20% 19% !important;
+    }
+
+    #redes-sociais a {
+        width: 27px;
+        margin: 0% 0% 0% 5%;
+    }
+   
+
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+        animation: none;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    section {
+        width: 100%;
+        padding: 14px;
+    }
+
+    aside {
+        width: 100% !important;
+        margin: 0% !important;
+        text-align: center;
+    }
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 100% !important;
+        width: 55% !important;
+        background: #221542;
+    }
+
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 45% !important;
+        font-size: 0.88em !important;
+        height: 100% !important;
+        margin: 12% 1% 1% 1% !important;
+    }
+
+    #textInfo {
+        margin: 2% 10% 0 9%;
+    }
+
+ 
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 50% !important;
+        margin: 30% 0% 0% 12%;
+    }
+   
+    .projetos-aside {
+        margin-top: 6% !important;
+    }
+    .thumbnail {
+        width: 250px;
+        height: 190px;
+    }
+    
+    .thumbnail img {
+        width: 250px;
+        height: 190px;
+
+    }
+
+    .containere {
+        max-width: 250px !important;
+        overflow: hidden;
+    }
+
+    .icon {
+    top: 65%;
+    }
+    
+    input, textarea {
+        width: 100%;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+  
+}
+
+@media only screen 
+and (max-width: 899px) {
+    header {
+        width: 90% !important;
+        height: 6%;
+        max-width: 111px !important;
+    }
+
+    header div nav,
+    .dropdown {
+        width: 100%;
+    }
+    
+    .nomeL {
+        font-size: 1.1em !important;
+    }
+
+    .sandwich div {
+     margin: 20% 10%;
+    }
+
+    .emphasisB {
+        font-size: 0.6em !important;
+    }
+
+    .dropdown-content a {
+        font-size: 0.8em;
+    }
+
+    .home-aside {
+        position: static;
+        width: 80% !important;
+        margin: 30% 12% !important;
+    }
+
+    #redes-sociais a {
+        width: 27px;
+        margin: 0% 0% 0% 5%;
+    }
+   
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 40% !important;
+        width: 100% !important;
+        background: #221542;
+     }
+
+    .small {
+        width: 10%;
+        position: absolute;
+        display: inline-block !important;
+        top: 25%;
+        
+    }
+    .small a {
+        margin: 10% 0 !important;
+        width: 120px !important;
+    }
+
+    .spcText {
+        display: block;
+        font-size: 0.8em;
+        padding-top: 10%;
+        margin-left: 120%;
+    }
+
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 100%;
+        font-size: 0.88em !important;
+        height: 60% !important;
+        bottom: 0;
+    }
+
+    #textInfo {
+        margin: 2% 10% 0 9%;
+    }
+
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 210px !important;
+        height: 90%;
+        margin: 5% 1% 1% 12%;
+    }
+   
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 12% 5% 12% 17%;
+        animation: none;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+    .projetos-aside {
+        margin-top: 6% !important;
+    }
+
+    #projects-content {
+        padding: 10% 8% !important;
+    }
+
+    .thumbnail {
+        display: inline-block;
+        width: 100%;
+        max-width: 190px !important;
+        height: 150px;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        max-width: 190px !important;
+        height: 150px;
+
+    }
+
+    .containere {
+        width: 100% !important;
+        max-width: 190px !important;
+        overflow: hidden;
+    }
+    .overlay{
+        width: 100%;
+    }
+    .icon {
+    top: 70%;
+    }
+    
+    input, textarea {
+        width: 100%;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+  
+}
+    

@@ -1,0 +1,547 @@
+/**
+ * =================================================================== 
+ *  01. Fonts and Variables
+ *  02. Base Style
+ *  03. Header
+ *  04. Scrollbar 
+ *  05. Buttons
+ *  06. Keyframes
+ * ===================================================================  */
+
+/**
+* ===================================================================
+*    01. FONTS AND VARIABLES
+* =================================================================== */
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+:root {
+  --white: #ffffff;
+  --background-blue: #27184E;
+  --cor-menu-hover-home: #D95B72;
+  --color-font-hover: #813b48;
+  --color-font-link: #C25161;
+  --linkedin: url(../img/logo-linkedin.png);
+  --linkedin-hover: url(../img/logo-linkedin-hover.png);
+  --github: url(../img/logo-github.png);
+  --github-hover: url(../img/logo-github-hover.png);
+  --instagram: url(../img/logo-instagram.png);
+  --instagram-hover: url(../img/logo-instagram-hover.png);
+  --facebook: url(../img/logo-facebook.png);
+  --facebook-hover: url(../img/logo-facebook-hover.png);
+  --chevron-down: url(../img/chevron-down.png);
+  --chevron-up: url(../img/chevron-up.png);
+  --bg-home: url(../img/bg-home.png);
+}
+
+/**
+* ===================================================================
+*   02. BASE STYLE
+* =================================================================== */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a:-webkit-any-link {
+  color: var(--cor-menu-hover-home);
+  transition: color 1s;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+li {
+  display: list-item;
+  list-style-type: none;
+}
+
+#sobre,
+#projetos,
+#contato {
+  display: block;
+  position: relative;
+  background: var(--background-blue);
+}
+
+.home-aside,
+.sobre-aside,
+.projetos-aside,
+.contato-aside {
+  position: absolute;
+}
+
+.chevron-down {
+  display: inline-block;
+  background-image: var(--chevron-down);
+  width: 48px;
+  height: 48px;
+  animation: fade 1.3s infinite;
+}
+
+/**
+* ===================================================================
+*   03. HEADER
+* =================================================================== */
+
+header {
+  display: block;
+  position: fixed;
+  left: 20%;
+  padding-top: 1.2%;
+  z-index: 2;
+  width: 100%;
+  height: 9%;
+  max-width: 155px;
+  background-color: #281546;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: var(--cor-menu-hover-home);
+}
+
+.nomeL {
+  display: inline-block;
+  color: white !important;
+  font-weight: 900;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+
+.emphasisB {
+  font-weight: 900;
+  color: var(--color-font-link);
+  float: left;
+  font-size: 11.5px;
+}
+
+.sandwich {
+  display: inline-block;
+  float: left;
+  width: 17%;
+  height: 65%;
+  margin: 0 8%;
+  cursor: pointer;
+}
+
+.sandwich div {
+  display: block;
+  margin: 15%;
+  border-bottom: 2px var(--cor-menu-hover-home) solid;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  background-color: #281546;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -200%;
+  z-index: -2;
+  transition: all 0.4s ease 0.3s, visibility 0s linear 0.3s, z-index 0s linear 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content li a:hover {
+  background-color: #21113b;
+}
+
+.dropdown-content li.active > a { 
+  color: var(--cor-menu-hover-home);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.dropdown:hover .dropdown-content {
+  top: 90%;
+  visibility: visible;
+}
+
+/**
+* ===================================================================
+*    04. SCROLLBAR
+* =================================================================== */
+
+/* SCROLLBAR FIREFOX */
+html {
+  scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-font-hover);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--cor-menu-hover-home);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--color-font-link);
+}
+
+/**
+* ===================================================================
+*   05. BUTTONS
+* =================================================================== */
+
+input, textarea, button {
+  outline: none;
+  color: var(--cor-menu-hover-home);
+  font-family: inherit;
+  width: 100%;
+  border: 1px solid var(--cor-menu-hover-home);
+  border-radius: 7px;
+  background: transparent;
+  padding: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  resize: none;
+}
+
+input:active,
+input:focus,
+input:hover,
+textarea:active,
+textarea:focus,
+textarea:hover,
+button:active,
+button:focus,
+button:hover {
+  background-color: var(--cor-menu-hover-home);
+  color: var(--background-blue);
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+}
+
+:-moz-placeholder {
+ color: var(--white);
+ opacity:  1;
+}
+
+::-moz-placeholder {
+ color: var(--white);
+ opacity:  1;
+}
+
+:-ms-input-placeholder { 
+ color: var(--white);
+}
+
+::-ms-input-placeholder { 
+ color: var(--white);
+}
+
+::placeholder { 
+ color: rgb(232, 231, 236);
+}
+
+input:hover::-webkit-input-placeholder {
+color: var(--background-blue);
+}
+
+input:hover:-moz-placeholder {
+ color: var(--cor-menu-hover-home);
+ opacity:  1;
+}
+
+input:hover::-moz-placeholder {
+ color: var(--cor-menu-hover-home);
+ opacity:  1;
+}
+
+input:hover:-ms-input-placeholder { 
+ color: var(--cor-menu-hover-home);
+}
+
+input:hover::-ms-input-placeholder { 
+ color: var(--cor-menu-hover-home);
+}
+
+input:hover::placeholder { 
+ color: var(--background-blue);
+ font-weight: bold;
+}
+
+textarea:hover::-webkit-input-placeholder {
+ color: var(--background-blue);
+}
+
+textarea:hover:-moz-placeholder {
+ color: var(--cor-menu-hover-home);
+ opacity:  1;
+}
+
+textarea:hover::-moz-placeholder {
+ color: var(--cor-menu-hover-home);
+ opacity:  1;
+}
+
+textarea:hover:-ms-input-placeholder { 
+ color: var(--cor-menu-hover-home);
+}
+
+textarea:hover::-ms-input-placeholder { 
+ color: var(--cor-menu-hover-home);
+}
+
+textarea:hover::placeholder { 
+ color: var(--background-blue);
+ font-weight: bold;
+}
+
+
+/**
+* ===================================================================
+*   06. KEYFRAMES
+* =================================================================== */
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+     width: 570px;
+  }
+}
+
+@keyframes curPisc {
+  from,
+  to {
+      border-right: 5px solid white;
+  }
+
+  50% {
+      border-right: none;
+  }
+}
+
+/* maquina de escrever outros browsers */
+@-moz-keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+     width: 570px;
+  }
+}
+
+@-moz-keyframes curPisc {
+  from,
+  to {
+      border-right: 5px solid white;
+  }
+
+  50% {
+      border-right: none;
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+     width: 570px;
+  }
+}
+
+@-webkit-keyframes curPisc {
+  from,
+  to {
+      border-right: 5px solid white;
+  }
+
+  50% {
+      border-right: none;
+  }
+}
+
+@-o-keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+     width: 570px;
+  }
+}
+
+@-o-keyframes curPisc {
+  from,
+  to {
+      border-right: 5px solid white;
+  }
+
+  50% {
+      border-right: none;
+  }
+}
+@-ms-keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+     width: 570px;
+  }
+}
+
+@-ms-keyframes curPisc {
+  from,
+  to {
+      border-right: 5px solid white;
+  }
+
+  50% {
+      border-right: none;
+  }
+}
+
+/* chevron fade chrome */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100%  {
+    opacity: 0;
+
+  }
+}
+
+/* chevron fade other browsers */
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100%  {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100%  {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100%  {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100%  {
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px var(--color-font-hover);
+  }
+  to {
+    text-shadow: 0 0 30px var(--color-font-link), 0 0 10px var(--cor-menu-hover-home);
+  }
+}
+
+
+
+
