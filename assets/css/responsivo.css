@@ -1,6 +1,6 @@
 @media only screen 
 and (min-width: 1000px) 
-and (max-width: 1100px) {
+and (max-width: 1500px) {
     header {
         width: 100% !important;
     }
@@ -232,7 +232,11 @@ and (max-width: 999px) {
     .icon {
     top: 65%;
     }
-    
+
+    .contato {
+        margin: 14% 3%;
+    }
+
     input, textarea {
         width: 100%;
     }
@@ -243,8 +247,10 @@ and (max-width: 999px) {
   
 }
 
+
 @media only screen 
-and (max-width: 899px) {
+and (min-width: 800px)
+and (max-width: 900px) {
     header {
         width: 90% !important;
         height: 6%;
@@ -275,7 +281,202 @@ and (max-width: 899px) {
     .home-aside {
         position: static;
         width: 80% !important;
-        margin: 30% 12% !important;
+        margin: 20% auto !important;
+    }
+
+    #redes-sociais a {
+        width: 27px;
+        margin: 0% 0% 0% 5%;
+    }
+   
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .home {
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 11% 0% 12% 14%;
+        animation: none;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+
+    .small a {
+        margin: 5% 0 !important;
+        width: 80px !important;
+    }
+
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 100% !important;
+        width: 52% !important;
+        background: #221542;
+    }
+
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 48% !important;
+        font-size: 0.88em !important;
+        height: 100% !important;
+        margin: 12% 1% 1% 1% !important;
+    }
+
+    #textInfo {
+        margin: 2% 10% 0 5%;
+    }
+
+ 
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 50% !important;
+        margin: 30% 0% 5% 17%;
+    }
+
+    .projetos-aside {
+        margin-top: 10% !important;
+    }
+
+    #projects-content {
+        padding: 1% 10% !important;
+        max-height: 450px;
+    }
+    .scroll {
+        width: 100%;
+        overflow-y: auto;
+        max-height: 420px;
+        margin: 2%; 
+        scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);         
+    }
+
+    
+    .scroll::-webkit-scrollbar {
+        width: 0.4em;
+    }
+  
+     /* Track */
+    .scroll::-webkit-scrollbar-track {
+        background: var(--color-font-hover);
+    }
+  
+    /* Handle */
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--cor-menu-hover-home);
+    }
+  
+    /* Handle on hover */
+    .scroll::-webkit-scrollbar-thumb:hover {
+        background:var(--color-font-link);
+    }
+    
+
+    .thumbnail {
+        display: inline-block;
+        width: 100%;
+        max-width: 295px !important;
+        height: 145px;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        max-width: 295px !important;
+        height: 145px;
+
+    }
+
+    .containere {
+        width: 100% !important;
+        max-width: 295px !important;
+        overflow: hidden;
+    }
+
+    .overlay{
+        width: 100%;
+    }
+    .icon {
+    top: 70%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .contato {
+        margin: 14% 3%;
+    }
+
+    input, textarea {
+        width: 100% !important;
+    }
+
+    form {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+  
+}
+    
+
+@media only screen 
+and (min-width: 700px)
+and (max-width: 800px) {
+    header {
+        width: 90% !important;
+        height: 6%;
+        max-width: 111px !important;
+    }
+
+    header div nav,
+    .dropdown {
+        width: 100%;
+    }
+    
+    .nomeL {
+        font-size: 1.1em !important;
+    }
+
+    .sandwich div {
+     margin: 20% 10%;
+    }
+
+    .emphasisB {
+        font-size: 0.6em !important;
+    }
+
+    .dropdown-content a {
+        font-size: 0.8em;
+    }
+
+    .home-aside {
+        position: static;
+        width: 80% !important;
+        margin: 20% auto !important;
     }
 
     #redes-sociais a {
@@ -325,7 +526,7 @@ and (max-width: 899px) {
     }
 
     #textInfo {
-        margin: 2% 10% 0 9%;
+        margin: 2% 10% 0 1%;
     }
 
     .home {
@@ -346,8 +547,8 @@ and (max-width: 899px) {
     }
 
     h1 {
-        font-size: 1.5em;
-        margin: 12% 5% 12% 17%;
+        font-size: 1.8em;
+        margin: 12% 5% 12% 26%;
         animation: none;
     }
 
@@ -355,53 +556,534 @@ and (max-width: 899px) {
         font-size: 1em;
     }
 
-    
 
     #maquinaEs {
         width: 100%;
     }
 
     .projetos-aside {
-        margin-top: 6% !important;
+        margin-top: 10% !important;
     }
 
     #projects-content {
-        padding: 10% 8% !important;
+        padding: 6% 18% !important;
+        max-height: 450px;
+
     }
+
 
     .thumbnail {
         display: inline-block;
         width: 100%;
-        max-width: 190px !important;
+        max-width: 300px !important;
         height: 150px;
     }
     
     .thumbnail img {
         width: 100%;
-        max-width: 190px !important;
+        max-width: 300px !important;
         height: 150px;
 
     }
 
     .containere {
         width: 100% !important;
-        max-width: 190px !important;
+        max-width: 300px !important;
         overflow: hidden;
     }
+    .scroll {
+        width: 100%;
+        overflow-y: auto;
+        max-height: 420px;
+        padding-left: 10%;
+        margin: 2%; 
+        scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);         
+    }
+
+    
+    .scroll::-webkit-scrollbar {
+        width: 0.4em;
+    }
+  
+     /* Track */
+    .scroll::-webkit-scrollbar-track {
+        background: var(--color-font-hover);
+    }
+  
+    /* Handle */
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--cor-menu-hover-home);
+    }
+  
+    /* Handle on hover */
+    .scroll::-webkit-scrollbar-thumb:hover {
+        background:var(--color-font-link);
+    }
+    
+
+
     .overlay{
         width: 100%;
     }
     .icon {
     top: 70%;
     }
-    
+
+    h2 {
+        text-align: center;
+    }
+
+    .contato {
+        margin: 14% 3%;
+    }
+
     input, textarea {
-        width: 100%;
+        width: 100% !important;
     }
 
     form {
+        width: 100% !important;
         margin: 0 auto;
     }
   
 }
     
+@media only screen 
+and (min-width: 661px)
+and (max-width: 700px) {
+    header {
+        width: 90% !important;
+        height: 6%;
+        max-width: 111px !important;
+    }
+
+    header div nav,
+    .dropdown {
+        width: 100%;
+    }
+    
+    .nomeL {
+        font-size: 1.1em !important;
+    }
+
+    .sandwich div {
+     margin: 20% 10%;
+    }
+
+    .emphasisB {
+        font-size: 0.6em !important;
+    }
+
+    .dropdown-content a {
+        font-size: 0.8em;
+    }
+
+    .home-aside {
+        position: static;
+        width: 80% !important;
+        margin: 20% auto !important;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 12% 2% 12% 22%;
+        animation: none;
+    }
+
+    #redes-sociais a {
+        width: 27px;
+        margin: 0% 0% 0% 5%;
+    }
+   
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 40% !important;
+        width: 100% !important;
+        background: #221542;
+    }
+
+    
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 100%;
+        height: 60% !important;
+        bottom: 0;
+    }
+
+    .small {
+        width: 10%;
+        position: absolute;
+        display: inline-block !important;
+        top: 25%;
+        
+    }
+    .small a {
+        margin: 10% 0 !important;
+        width: 120px !important;
+    }
+
+    .spcText {
+        display: block;
+        font-size: 0.8em;
+        padding-top: 10%;
+        margin-left: 120%;
+    }
+
+    .intro {
+        font-size: 1em;
+    }
+
+    #textInfo {
+        margin: 2% 12% 0 12%;
+    }
+
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 210px !important;
+        height: 90%;
+        margin: 5% 1% 1% 12%;
+    }   
+
+    p {
+        font-size: 1em;
+    }
+
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+    .projetos-aside {
+        margin-top: 10% !important;
+    }
+
+    #projects-content {
+        padding: 6% 18% !important;
+        max-height: 450px;
+
+    }
+
+    .thumbnail {
+        display: inline-block;
+        width: 100%;
+        max-width: 300px !important;
+        height: 150px;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        max-width: 300px !important;
+        height: 150px;
+
+    }
+
+    .containere {
+        width: 100% !important;
+        max-width: 300px !important;
+        overflow: hidden;
+    }
+
+    .scroll {
+        width: 100%;
+        overflow-y: auto;
+        max-height: 420px;
+        padding-left: 10%;
+        margin: 2%; 
+        scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);         
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 0.4em;
+    }
+  
+     /* Track */
+    .scroll::-webkit-scrollbar-track {
+        background: var(--color-font-hover);
+    }
+  
+    /* Handle */
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--cor-menu-hover-home);
+    }
+  
+    /* Handle on hover */
+    .scroll::-webkit-scrollbar-thumb:hover {
+        background:var(--color-font-link);
+    }
+    
+    .overlay{
+        width: 100%;
+    }
+    .icon {
+    top: 70%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .contato {
+        margin: 14% 3%;
+    }
+
+    input, textarea {
+        width: 100% !important;
+    }
+
+    form {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+  
+}
+
+@media only screen 
+and (max-width: 660px) {
+    header {
+        width: 90% !important;
+        height: 6%;
+        max-width: 111px !important;
+    }
+
+    header div nav,
+    .dropdown {
+        width: 100%;
+    }
+    
+    .nomeL {
+        font-size: 1.1em !important;
+    }
+
+    .sandwich div {
+     margin: 20% 10%;
+    }
+
+    .emphasisB {
+        font-size: 0.6em !important;
+    }
+
+    .dropdown-content a {
+        font-size: 0.8em;
+    }
+
+    .home-aside {
+        position: static;
+        width: 80% !important;
+        margin: 25% auto !important;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin: 12% 2% 12% 19%;
+        animation: none;
+    }
+
+    #redes-sociais a {
+        width: 27px;
+        margin: 0% 0% 0% 5%;
+    }
+   
+    #redes-sociais a:last-child {
+        margin-right: 0% !important;
+    }
+
+    .sobre-aside {
+        width: 100% !important;
+    }
+
+    .sobre-aside:first-child {
+        height: 40% !important;
+        width: 100% !important;
+        background: #221542;
+    }
+
+    
+    .sobre-aside:last-child {
+        display: block !important;
+        width: 100%;
+        height: 60% !important;
+        bottom: 0;
+    }
+
+    .small {
+        width: 10%;
+        position: absolute;
+        display: inline-block !important;
+        top: 25%;
+        
+    }
+    .small a {
+        margin: 10% 0 !important;
+        width: 120px !important;
+    }
+
+    .spcText {
+        display: block;
+        font-size: 0.8em;
+        padding-top: 10%;
+        margin-left: 120%;
+    }
+
+    .intro {
+        font-size: 1em;
+    }
+
+    #textInfo {
+        margin: 2% 12% 0 12%;
+    }
+    .scrollB {
+        width: 100%;
+        overflow-y: auto;
+        max-height: 300px;
+        margin: 2%; 
+        scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);         
+    }
+
+    .scrollB::-webkit-scrollbar {
+        width: 0.4em;
+    }
+  
+     /* Track */
+    .scrollB::-webkit-scrollbar-track {
+        background: var(--color-font-hover);
+    }
+  
+    /* Handle */
+    .scrollB::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--cor-menu-hover-home);
+    }
+  
+    /* Handle on hover */
+    .scrollB::-webkit-scrollbar-thumb:hover {
+        background:var(--color-font-link);
+    }
+
+    .home {
+        padding: 0;
+    }
+
+    #photo {
+        display: inline-block;
+        width: 100% !important;
+        max-width: 210px !important;
+        height: 90%;
+        margin: 5% 1% 1% 12%;
+    }   
+
+    p {
+        font-size: 1em;
+    }
+
+
+    #maquinaEs {
+        width: 100%;
+    }
+
+    .projetos-aside {
+        margin-top: 10% !important;
+    }
+
+    #projects-content {
+        padding: 6% 18% !important;
+        max-height: 450px;
+
+    }
+
+    .thumbnail {
+        display: inline-block;
+        width: 100%;
+        max-width: 300px !important;
+        height: 150px;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        max-width: 300px !important;
+        height: 150px;
+
+    }
+
+    .containere {
+        width: 100% !important;
+        max-width: 300px !important;
+        overflow: hidden;
+    }
+
+    .scroll {
+        width: 100%;
+        overflow-y: auto;
+        max-height: 420px;
+        padding-left: 10%;
+        margin: 2%; 
+        scrollbar-color: var(--cor-menu-hover-home) var(--color-font-hover);         
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 0.4em;
+    }
+  
+     /* Track */
+    .scroll::-webkit-scrollbar-track {
+        background: var(--color-font-hover);
+    }
+  
+    /* Handle */
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--cor-menu-hover-home);
+    }
+  
+    /* Handle on hover */
+    .scroll::-webkit-scrollbar-thumb:hover {
+        background:var(--color-font-link);
+    }
+    
+    .overlay{
+        width: 100%;
+    }
+    .icon {
+    top: 70%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .contato {
+        margin: 14% 3%;
+    }
+
+    input, textarea {
+        width: 100% !important;
+    }
+
+    form {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+  
+}
+
